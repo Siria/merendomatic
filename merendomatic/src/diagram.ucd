@@ -1,11 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="diagram" size="959,206" id="" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D31303030206D6572656E646F6D617469632F73656279">
-  <children xsi:type="editmodel:ClassEditModel" name="Gestore" location="50,50" size="101,68" id="/Gestore" runTimeClassModel="main([Ljava.lang.String;),Gestore()">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="diagram" size="938,231" id="" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D31303030206D6572656E646F6D617469632F73656279">
+  <children xsi:type="editmodel:ClassEditModel" name="Gestore" location="345,35" size="101,68" id="/Gestore" runTimeClassModel="main([Ljava.lang.String;),Gestore()">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="73,18">
       <children xsi:type="editmodel:MethodEditModel" name="Gestore" id="/Gestore#Gestore()"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ProfiloUtente" location="90,135" size="142,76" id="/ProfiloUtente" runTimeClassModel="id,credito">
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="credito" id="/ProfiloUtente#credito"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="/ProfiloUtente#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/ListaUtenti@listaUtenti1+/ProfiloUtente@profiloUtente1" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="profiloUtente1" location="85,0" id="/ListaUtenti@listaUtenti1+/ProfiloUtente@profiloUtente1|/ProfiloUtente#profiloUtente1" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name="- profiloUtente1" location="182,115" size="86,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="163,115" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="listaUtenti1" location="55,30" id="/ListaUtenti@listaUtenti1+/ProfiloUtente@profiloUtente1|/ListaUtenti#listaUtenti1" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - listaUtenti1" location="182,72" size="73,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="161,72" size="7,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="ListaUtenti" location="120,35" size="125,30" id="/ListaUtenti" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="ListaProdotti" location="516,35" size="141,30" id="/ListaProdotti" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Prodotto" location="525,135" size="124,94" id="/Prodotto" runTimeClassModel="codice,prezzo,nome">
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="codice" id="/Prodotto#codice"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nome" id="/Prodotto#nome"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="prezzo" id="/Prodotto#prezzo"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/ListaProdotti@listaProdotti+/Prodotto@prodotto" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.0/@children.1" label="//@children.4/@sourceConnections.0/@children.2" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="prodotto" location="61,0" id="/ListaProdotti@listaProdotti+/Prodotto@prodotto|/Prodotto#prodotto" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - prodotto" location="593,115" size="57,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="574,115" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="listaProdotti" location="70,30" id="/ListaProdotti@listaProdotti+/Prodotto@prodotto|/ListaProdotti#listaProdotti" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name="- listaProdotti" location="593,72" size="72,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="572,72" size="7,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
   <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
