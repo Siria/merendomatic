@@ -11,5 +11,6 @@ public class Gestore {
 		System.out.println(x);
 		System.out.println("Ufffiiiii");
 		System.out.println("WOW--- :-)");
+		System.out.println("Basta sparare caxxate... cOminciamo a lavorare..");
 	} 
 }
