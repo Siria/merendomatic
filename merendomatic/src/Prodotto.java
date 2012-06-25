@@ -76,6 +76,7 @@ public class Prodotto {
 	/** 
 	 * @uml.property name="distributore"
 	 * @uml.associationEnd multiplicity="(0 -1)" inverse="prodotto:Distributore"
+	 * @uml.association name="xx"
 	 */
 	private Collection distributore;
 
@@ -95,6 +96,31 @@ public class Prodotto {
 	 */
 	public void setDistributore(Collection distributore) {
 		this.distributore = distributore;
+	}
+
+	/**
+	 * @uml.property  name="utente"
+	 * @uml.associationEnd  multiplicity="(0 -1)" inverse="prodotto:Utente"
+	 * @uml.association  name="acquista"
+	 */
+	private Collection utente;
+
+	/**
+	 * Getter of the property <tt>utente</tt>
+	 * @return  Returns the utente.
+	 * @uml.property  name="utente"
+	 */
+	public Collection getUtente() {
+		return utente;
+	}
+
+	/**
+	 * Setter of the property <tt>utente</tt>
+	 * @param utente  The utente to set.
+	 * @uml.property  name="utente"
+	 */
+	public void setUtente(Collection utente) {
+		this.utente = utente;
 	}
 
 	/**

@@ -53,6 +53,7 @@ public class Distributore {
 	/** 
 	 * @uml.property name="prodotto"
 	 * @uml.associationEnd multiplicity="(0 -1)" aggregation="composite" inverse="distributore:Prodotto"
+	 * @uml.association name="xx"
 	 */
 	private Collection prodotto;
 
@@ -74,14 +75,14 @@ public class Distributore {
 		this.prodotto = prodotto;
 	}
 
-	/**
-	 * @uml.property  name="merendoLista"
-	 * @uml.associationEnd  multiplicity="(1 1)" inverse="distributore:MerendoLista"
-	 * @uml.association  name="contiene"
+	/** 
+	 * @uml.property name="merendoLista"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="distributore:MerendoLista"
+	 * @uml.association name="contiene"
 	 */
 	private MerendoLista merendoLista = null;
 
-	/**
+	/** 
 	 * Getter of the property <tt>merendoLista</tt>
 	 * @return  Returns the merendoLista.
 	 * @uml.property  name="merendoLista"
@@ -90,13 +91,37 @@ public class Distributore {
 		return merendoLista;
 	}
 
-	/**
+	/** 
 	 * Setter of the property <tt>merendoLista</tt>
 	 * @param merendoLista  The merendoLista to set.
 	 * @uml.property  name="merendoLista"
 	 */
 	public void setMerendoLista(MerendoLista merendoLista) {
 		this.merendoLista = merendoLista;
+	}
+
+	/**
+	 * @uml.property  name="merendomatic"
+	 * @uml.associationEnd  inverse="distributore:Merendomatic"
+	 */
+	private Merendomatic merendomatic;
+
+	/**
+	 * Getter of the property <tt>merendomatic</tt>
+	 * @return  Returns the merendomatic.
+	 * @uml.property  name="merendomatic"
+	 */
+	public Merendomatic getMerendomatic() {
+		return merendomatic;
+	}
+
+	/**
+	 * Setter of the property <tt>merendomatic</tt>
+	 * @param merendomatic  The merendomatic to set.
+	 * @uml.property  name="merendomatic"
+	 */
+	public void setMerendomatic(Merendomatic merendomatic) {
+		this.merendomatic = merendomatic;
 	}
 
 }
