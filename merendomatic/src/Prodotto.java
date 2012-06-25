@@ -1,5 +1,7 @@
 
 
+import java.util.Collection;
+
 public class Prodotto {
 
 	/**
@@ -69,6 +71,30 @@ public class Prodotto {
 	 */
 	public void setCodice(String codice) {
 		this.codice = codice;
+	}
+
+	/** 
+	 * @uml.property name="distributore"
+	 * @uml.associationEnd multiplicity="(0 -1)" inverse="prodotto:Distributore"
+	 */
+	private Collection distributore;
+
+	/** 
+	 * Getter of the property <tt>distributore</tt>
+	 * @return  Returns the distributore.
+	 * @uml.property  name="distributore"
+	 */
+	public Collection getDistributore() {
+		return distributore;
+	}
+
+	/** 
+	 * Setter of the property <tt>distributore</tt>
+	 * @param distributore  The distributore to set.
+	 * @uml.property  name="distributore"
+	 */
+	public void setDistributore(Collection distributore) {
+		this.distributore = distributore;
 	}
 
 	/**
