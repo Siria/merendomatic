@@ -75,24 +75,17 @@ public class Prodotto {
 	 * @uml.property  name="listaProdotti"
 	 * @uml.associationEnd  multiplicity="(1 1)" inverse="prodotto:ListaProdotti"
 	 */
-	private ListaProdotti listaProdotti = null;
-
 	/**
 	 * Getter of the property <tt>listaProdotti</tt>
 	 * @return  Returns the listaProdotti.
 	 * @uml.property  name="listaProdotti"
 	 */
-	public ListaProdotti getListaProdotti() {
-		return listaProdotti;
-	}
 
 	/**
 	 * Setter of the property <tt>listaProdotti</tt>
 	 * @param listaProdotti  The listaProdotti to set.
 	 * @uml.property  name="listaProdotti"
 	 */
-	public void setListaProdotti(ListaProdotti listaProdotti) {
-		this.listaProdotti = listaProdotti;
-	}
+
 
 }

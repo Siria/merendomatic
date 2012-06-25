@@ -1,8 +1,8 @@
 
 
-public class Gestore {
+public class Merendomatic {
 	
-	Gestore(){
+	Merendomatic(){
 		
 	}
 		
