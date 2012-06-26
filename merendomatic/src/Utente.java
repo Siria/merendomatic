@@ -50,14 +50,14 @@ public class Utente extends MerendoLista {
 		this.credito = credito;
 	}
 
-	/**
-	 * @uml.property  name="merendoLista"
-	 * @uml.associationEnd  multiplicity="(1 1)" inverse="utente:MerendoLista"
-	 * @uml.association  name="visiona"
+	/** 
+	 * @uml.property name="merendoLista"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="utente:MerendoLista"
+	 * @uml.association name="visualizza"
 	 */
 	private MerendoLista merendoLista = null;
 
-	/**
+	/** 
 	 * Getter of the property <tt>merendoLista</tt>
 	 * @return  Returns the merendoLista.
 	 * @uml.property  name="merendoLista"
@@ -66,7 +66,7 @@ public class Utente extends MerendoLista {
 		return merendoLista;
 	}
 
-	/**
+	/** 
 	 * Setter of the property <tt>merendoLista</tt>
 	 * @param merendoLista  The merendoLista to set.
 	 * @uml.property  name="merendoLista"

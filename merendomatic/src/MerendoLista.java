@@ -4,14 +4,14 @@ import java.util.Collection;
 
 public class MerendoLista {
 
-	/**
-	 * @uml.property  name="utente"
-	 * @uml.associationEnd  multiplicity="(0 -1)" inverse="merendoLista:Utente"
-	 * @uml.association  name="visiona"
+	/** 
+	 * @uml.property name="utente"
+	 * @uml.associationEnd multiplicity="(0 -1)" inverse="merendoLista:Utente"
+	 * @uml.association name="visualizza"
 	 */
 	private Collection utente;
 
-	/**
+	/** 
 	 * Getter of the property <tt>utente</tt>
 	 * @return  Returns the utente.
 	 * @uml.property  name="utente"
@@ -20,7 +20,7 @@ public class MerendoLista {
 		return utente;
 	}
 
-	/**
+	/** 
 	 * Setter of the property <tt>utente</tt>
 	 * @param utente  The utente to set.
 	 * @uml.property  name="utente"
