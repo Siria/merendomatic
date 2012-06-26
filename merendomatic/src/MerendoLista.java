@@ -79,4 +79,28 @@ public class MerendoLista {
 		this.merendomatic = merendomatic;
 	}
 
+	/**
+	 * @uml.property  name="merendomatic1"
+	 * @uml.associationEnd  multiplicity="(1 1)" inverse="merendoLista1:Merendomatic"
+	 */
+	private Merendomatic merendomatic1 = null;
+
+	/**
+	 * Getter of the property <tt>merendomatic1</tt>
+	 * @return  Returns the merendomatic1.
+	 * @uml.property  name="merendomatic1"
+	 */
+	public Merendomatic getMerendomatic1() {
+		return merendomatic1;
+	}
+
+	/**
+	 * Setter of the property <tt>merendomatic1</tt>
+	 * @param merendomatic1  The merendomatic1 to set.
+	 * @uml.property  name="merendomatic1"
+	 */
+	public void setMerendomatic1(Merendomatic merendomatic1) {
+		this.merendomatic1 = merendomatic1;
+	}
+
 }

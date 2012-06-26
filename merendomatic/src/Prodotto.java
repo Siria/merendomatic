@@ -76,7 +76,6 @@ public class Prodotto {
 	/** 
 	 * @uml.property name="distributore"
 	 * @uml.associationEnd multiplicity="(0 -1)" inverse="prodotto:Distributore"
-	 * @uml.association name="xx"
 	 */
 	private Collection distributore;
 

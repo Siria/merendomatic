@@ -14,13 +14,13 @@ public class Merendomatic {
 		System.out.println("Basta sparare caxxate... cOminciamo a lavorare..");
 	}
 
-	/**
-	 * @uml.property  name="distributore"
-	 * @uml.associationEnd  inverse="merendomatic:Distributore"
+	/** 
+	 * @uml.property name="distributore"
+	 * @uml.associationEnd inverse="merendomatic:Distributore"
 	 */
 	private Distributore distributore;
 
-	/**
+	/** 
 	 * Getter of the property <tt>distributore</tt>
 	 * @return  Returns the distributore.
 	 * @uml.property  name="distributore"
@@ -29,7 +29,7 @@ public class Merendomatic {
 		return distributore;
 	}
 
-	/**
+	/** 
 	 * Setter of the property <tt>distributore</tt>
 	 * @param distributore  The distributore to set.
 	 * @uml.property  name="distributore"
@@ -61,5 +61,29 @@ public class Merendomatic {
 	 */
 	public void setMerendoLista(MerendoLista merendoLista) {
 		this.merendoLista = merendoLista;
+	}
+
+	/**
+	 * @uml.property  name="merendoLista1"
+	 * @uml.associationEnd  multiplicity="(1 1)" inverse="merendomatic1:MerendoLista"
+	 */
+	private MerendoLista merendoLista1 = null;
+
+	/**
+	 * Getter of the property <tt>merendoLista1</tt>
+	 * @return  Returns the merendoLista1.
+	 * @uml.property  name="merendoLista1"
+	 */
+	public MerendoLista getMerendoLista1() {
+		return merendoLista1;
+	}
+
+	/**
+	 * Setter of the property <tt>merendoLista1</tt>
+	 * @param merendoLista1  The merendoLista1 to set.
+	 * @uml.property  name="merendoLista1"
+	 */
+	public void setMerendoLista1(MerendoLista merendoLista1) {
+		this.merendoLista1 = merendoLista1;
 	} 
 }

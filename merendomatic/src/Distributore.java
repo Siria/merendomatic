@@ -53,7 +53,6 @@ public class Distributore {
 	/** 
 	 * @uml.property name="prodotto"
 	 * @uml.associationEnd multiplicity="(0 -1)" aggregation="composite" inverse="distributore:Prodotto"
-	 * @uml.association name="xx"
 	 */
 	private Collection prodotto;
 
@@ -100,13 +99,13 @@ public class Distributore {
 		this.merendoLista = merendoLista;
 	}
 
-	/**
-	 * @uml.property  name="merendomatic"
-	 * @uml.associationEnd  inverse="distributore:Merendomatic"
+	/** 
+	 * @uml.property name="merendomatic"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="distributore:Merendomatic"
 	 */
-	private Merendomatic merendomatic;
+	private Merendomatic merendomatic = null;
 
-	/**
+	/** 
 	 * Getter of the property <tt>merendomatic</tt>
 	 * @return  Returns the merendomatic.
 	 * @uml.property  name="merendomatic"
@@ -115,7 +114,7 @@ public class Distributore {
 		return merendomatic;
 	}
 
-	/**
+	/** 
 	 * Setter of the property <tt>merendomatic</tt>
 	 * @param merendomatic  The merendomatic to set.
 	 * @uml.property  name="merendomatic"
